@@ -4,8 +4,8 @@ var teclas = {
   LEFT: 37,
   RIGHT: 39
 };
-var x = 250;
-var y = 250;
+var x = 170;
+var y = 190;
 
 var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
@@ -40,6 +40,7 @@ function cargarFondo(){
 function cargarCerdos(){
   cerdo.cargaOk = true;
   dibujar(x,y);
+  console.log(x,y);
 }
 
 function dibujar(x,y){
