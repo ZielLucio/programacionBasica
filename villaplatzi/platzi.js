@@ -1,6 +1,13 @@
 var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
 
+var boton = document.getElementById("botoncito");
+boton.addEventListener("click", recargar);
+
+function recargar(){
+  location.reload();
+}
+
 var fondo = {
   url:"tile.png",
   cargaOk: false
